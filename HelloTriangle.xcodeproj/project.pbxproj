@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9B19E30A2619924800066594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19E3092619924800066594 /* main.m */; };
+		9B6D3233261B4601006BB9B9 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D3232261B4601006BB9B9 /* Renderer.m */; };
+		9B6D3237261B55A1006BB9B9 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D3236261B55A1006BB9B9 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		9B19E3062619924800066594 /* HelloTriangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B19E3092619924800066594 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B6D3231261B4601006BB9B9 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		9B6D3232261B4601006BB9B9 /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		9B6D3236261B55A1006BB9B9 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +62,20 @@
 		9B19E3082619924800066594 /* HelloTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D3230261B45D1006BB9B9 /* Renderer */,
 				9B19E3092619924800066594 /* main.m */,
 			);
 			path = HelloTriangle;
+			sourceTree = "<group>";
+		};
+		9B6D3230261B45D1006BB9B9 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D3231261B4601006BB9B9 /* Renderer.h */,
+				9B6D3232261B4601006BB9B9 /* Renderer.m */,
+				9B6D3236261B55A1006BB9B9 /* Shaders.metal */,
+			);
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6D3237261B55A1006BB9B9 /* Shaders.metal in Sources */,
+				9B6D3233261B4601006BB9B9 /* Renderer.m in Sources */,
 				9B19E30A2619924800066594 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
