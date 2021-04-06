@@ -6,23 +6,7 @@
 //
 
 #import <AppKit/AppKit.h>
-#import "Renderer.h"
-
-MTKView *createMTKView() {
-    static Renderer *renderer;
-    renderer = [Renderer alloc];
-    
-    MTKView *view = [MTKView new];
-    view.delegate = renderer;
-    
-    view.device = MTLCreateSystemDefaultDevice();
-    NSCAssert(view.device, @"Metal is not supported on this device");
-    
-    renderer = [renderer initWithMetalKitView:view];
-    NSCAssert(renderer, @"Renderer failed initialization");
-    
-    return view;
-}
+#import "MetalView.h"
 
 void setupWindow() {
     NSRect frame = NSMakeRect(0, 0, 400, 400);
@@ -36,7 +20,7 @@ void setupWindow() {
                         backing:NSBackingStoreBuffered defer:NO];
     [window setTitle:@"Hello, Triangle!"];
     [window makeKeyAndOrderFront:nil];
-    [window setContentView:createMTKView()];
+    [window setContentView:[MetalView new]];
     
     CGFloat screenHeight = window.screen.frame.size.height;
     NSPoint topLeftPoint = NSMakePoint(40, screenHeight - 68);

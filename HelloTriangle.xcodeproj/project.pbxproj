@@ -10,6 +10,7 @@
 		9B19E30A2619924800066594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19E3092619924800066594 /* main.m */; };
 		9B6D3233261B4601006BB9B9 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D3232261B4601006BB9B9 /* Renderer.m */; };
 		9B6D3237261B55A1006BB9B9 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D3236261B55A1006BB9B9 /* Shaders.metal */; };
+		9BB32BFD261C16A4004C292D /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB32BFC261C16A4004C292D /* MetalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		9B6D3231261B4601006BB9B9 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
 		9B6D3232261B4601006BB9B9 /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
 		9B6D3236261B55A1006BB9B9 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9BB32BFB261C16A4004C292D /* MetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
+		9BB32BFC261C16A4004C292D /* MetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				9B6D3230261B45D1006BB9B9 /* Renderer */,
+				9BB32BFB261C16A4004C292D /* MetalView.h */,
+				9BB32BFC261C16A4004C292D /* MetalView.m */,
 				9B19E3092619924800066594 /* main.m */,
 			);
 			path = HelloTriangle;
@@ -134,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB32BFD261C16A4004C292D /* MetalView.m in Sources */,
 				9B6D3237261B55A1006BB9B9 /* Shaders.metal in Sources */,
 				9B6D3233261B4601006BB9B9 /* Renderer.m in Sources */,
 				9B19E30A2619924800066594 /* main.m in Sources */,
