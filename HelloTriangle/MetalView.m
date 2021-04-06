@@ -29,11 +29,15 @@
 // MARK: - Handling Events
 
 - (void)mouseDown:(NSEvent *)event {
-    
+    NSPoint point = event.locationInWindow;
+    point = [self convertPointToBacking:point];
+    [_renderer addTriangleAtPoint:point];
 }
 
 - (void)mouseDragged:(NSEvent *)event {
-    
+    NSPoint point = event.locationInWindow;
+    point = [self convertPointToBacking:point];
+    [_renderer moveLastTriangleToPoint:point];
 }
 
 @end

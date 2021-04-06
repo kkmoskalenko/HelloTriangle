@@ -11,4 +11,8 @@
 
 - (nonnull instancetype)initWithMetalKitView:(nonnull MTKView *)mtkView;
 
+- (void)addTriangleAtPoint:(NSPoint)point;
+
+- (void)moveLastTriangleToPoint:(NSPoint)point;
+
 @end
